@@ -1,14 +1,14 @@
-puts "Horas trabalhadas no mês:"
-hora=gets.chomp.to_f
-puts "Salario por hora:"
+puts "Salario fixo mensal: "
 salario=gets.chomp.to_f
-if hora>40
-    horas_normais=40
-    horas_extras=hora-horas_normais
-    valor_horasextras=(salario*horas_extras)*0.5
-    salario_total=horas_normais*salario+valor_horasextras
+puts "Valor total de vendas"
+vendas=gets.chomp.to_f
+if vendas>1500
+    valor_fixo_porc=1500
+    acrescimo=(vendas-valor_fixo_porc)*0.05
+    vendas_porc=valor_fixo_porc*0.03
+    vt_salario=salario+acrescimo+vendas_porc
 else
-    horas_normais=40
-    salario_total=horas_normais*salario
+    vendas_porc=vendas*0.03
+    vt_salario=salario+vendas_porc
 end
-puts "O seu salário total é: #{salario_total}"
+    puts "O salario final é: #{vt_salario}"

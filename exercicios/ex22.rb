@@ -1,17 +1,12 @@
-puts "Número da conta: "
-num_conta=gets.chomp
-puts "Saldo:"
-saldo=gets.chomp.to_f
-puts "Credito:"
-credito=gets.chomp.to_f
-puts "Debito:"
-debito=gets.chomp.to_f
-
-saldo_atual=saldo+credito-debito
-if saldo_atual>=0
-    puts "Saldo Positivo"
-
+puts "Estoque atual: "
+atual=gets.chomp.to_i
+puts "Estoque máximo:"
+max=gets.chomp.to_i
+puts "Estoque mínimo:"
+min=gets.chomp.to_i
+estoque_medio=(max+min)/2
+if atual>=estoque_medio
+    puts "Não efetuar compra"
 else
-    puts "Saldo Negativo"
+    puts "Efetuar compra"
 end
-puts "Seu saldo atual na conta #{num_conta} é: #{saldo_atual}"

@@ -1,10 +1,9 @@
-puts "Em qual ano estamos?"
-ano_atual=gets.chomp.to_i
-puts "Em que ano você nasceu?"
-ano_nasc=gets.chomp.to_i
-idade=ano_atual-ano_nasc
-if idade>=16
-    puts "Pode votar"
+puts "Digite um número:"
+n1=gets.chomp.to_i
+puts "Digite outro número:"
+n2=gets.chomp.to_i
+if n1>n2
+    puts "O maior número é o #{n1}"
 else
-    puts "Não pode votar"
+    puts "O maior número é o #{n2}"
 end

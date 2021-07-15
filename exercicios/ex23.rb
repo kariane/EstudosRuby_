@@ -1,12 +1,9 @@
-puts "Estoque atual: "
-atual=gets.chomp.to_i
-puts "Estoque máximo:"
-max=gets.chomp.to_i
-puts "Estoque mínimo:"
-min=gets.chomp.to_i
-estoque_medio=(max+min)/2
-if atual>=estoque_medio
-    puts "Não efetuar compra"
+puts "Digite um número: "
+numero=gets.chomp.to_f
+if numero > 0
+    puts "Número maior que 0"
+elsif numero < 0
+    puts "Número menor que 0"
 else
-    puts "Efetuar compra"
+    puts "Número igual a 0"
 end

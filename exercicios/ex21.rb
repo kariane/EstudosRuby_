@@ -1,14 +1,17 @@
-puts "Salario fixo mensal: "
-salario=gets.chomp.to_f
-puts "Valor total de vendas"
-vendas=gets.chomp.to_f
-if vendas>1500
-    valor_fixo_porc=1500
-    acrescimo=(vendas-valor_fixo_porc)*0.05
-    vendas_porc=valor_fixo_porc*0.03
-    vt_salario=salario+acrescimo+vendas_porc
+puts "Número da conta: "
+num_conta=gets.chomp
+puts "Saldo:"
+saldo=gets.chomp.to_f
+puts "Credito:"
+credito=gets.chomp.to_f
+puts "Debito:"
+debito=gets.chomp.to_f
+
+saldo_atual=saldo+credito-debito
+if saldo_atual>=0
+    puts "Saldo Positivo"
+
 else
-    vendas_porc=vendas*0.03
-    vt_salario=salario+vendas_porc
+    puts "Saldo Negativo"
 end
-    puts "O salario final é: #{vt_salario}"
+puts "Seu saldo atual na conta #{num_conta} é: #{saldo_atual}"

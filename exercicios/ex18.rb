@@ -1,9 +1,11 @@
-puts "Digite um número:"
-n1=gets.chomp.to_i
-puts "Digite outro número:"
-n2=gets.chomp.to_i
-if n1>n2
-    puts "Os números em ordem crescente: #{n2}, #{n1}"
+puts "Hora inicial:"
+h1=gets.chomp.to_i
+puts "Hora final:"
+h2=gets.chomp.to_i
+
+if h1>=h2
+    duracao=(24-h1)+h2
 else
-    puts "Os números em ordem crescente: #{n1}, #{n2}"
+    duracao=h2-h1
 end
+    puts "A duração total do jogo foi: #{duracao}"

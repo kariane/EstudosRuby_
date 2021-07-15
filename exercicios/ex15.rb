@@ -1,10 +1,10 @@
-puts "Digite a primeira nota:"
-a1=gets.chomp.to_f
-puts "Digite a segunda nota:"
-a2=gets.chomp.to_f
-media=(a1+a2)/2
-if media > 6
-    puts "Aprovado, sua média foi: #{media}"
+puts "Em qual ano estamos?"
+ano_atual=gets.chomp.to_i
+puts "Em que ano você nasceu?"
+ano_nasc=gets.chomp.to_i
+idade=ano_atual-ano_nasc
+if idade>=16
+    puts "Pode votar"
 else
-    puts "Reprovado, sua média foi: #{media}"
+    puts "Não pode votar"
 end
