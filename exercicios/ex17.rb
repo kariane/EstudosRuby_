@@ -3,7 +3,7 @@ n1=gets.chomp.to_i
 puts "Digite outro número:"
 n2=gets.chomp.to_i
 if n1>n2
-    puts "O maior número é o #{n1}"
+    puts "Os números em ordem crescente: #{n2}, #{n1}"
 else
-    puts "O maior número é o #{n2}"
+    puts "Os números em ordem crescente: #{n1}, #{n2}"
 end

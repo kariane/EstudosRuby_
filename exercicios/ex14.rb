@@ -1,8 +1,10 @@
-puts "Quantas maças seram compradas?"
-qtd_macas=gets.chomp.to_i
-if qtd_macas<12
-    vtotal=qtd_macas*1.30
+puts "Digite a primeira nota:"
+a1=gets.chomp.to_f
+puts "Digite a segunda nota:"
+a2=gets.chomp.to_f
+media=(a1+a2)/2
+if media > 6
+    puts "Aprovado, sua média foi: #{media}"
 else
-    vtotal=qtd_macas*1
+    puts "Reprovado, sua média foi: #{media}"
 end
-puts "O valor total da sua compra é: #{vtotal}"
