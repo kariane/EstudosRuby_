@@ -1,32 +1,31 @@
+puts "Qual o tipo de combustivel?\nA-Alcool\nG-gasolina"
+tipo_combs=gets.chomp
+puts "Quantos litros de combustivel?"
+litros_combs=gets.chomp.to_f
 
-while tipo_combs!="A" || tipo_combs!="G"
-puts "Qual o tipo de combustive\nA-Alcool\nG-gasolina"
-tipo_combs=gets
-puts "Quantos litros de combustivel"
-litros_combs=gets.to_f
-tipo_combs+=1
-end
-if tipo_combs=='A' && litros_combs<=20
+if tipo_combs=="A"||tipo_combs=="a"
     vt_sdec=litros_combs*2.90
-    valor_desc=vt_sdec*0.03
-    vt_combs=vt_sdec-valor_desc
-
-elsif tipo_combs=="A" && litros_combs>20
-    vt_sdec=litros_combs*2.90
-    valor_desc=vt_sdec*0.05
-    vt_combs=vt_sdec-valor_desc
-
-elsif tipo_combs=="G" && litros_combs<=20
-    vt_sdec=litros_combs*3.30
-    valor_desc=vt_sdec*0.04
-    vt_combs=vt_sdec-valor_desc
-
-elsif tipo_combs=="G" && litros_combs>20
-    vt_sdec=litros_combs*3.30
-    valor_desc=vt_sdec*0.06
-    vt_combs=vt_sdec-valor_desc
-else
-    "Escolha inválida"
-end
+    if litros_combs<=20
+        valor_desc=vt_sdec*0.03
+        vt_combs=vt_sdec-valor_desc      
+    elsif litros_combs>20
+        valor_desc=vt_sdec*0.05
+        vt_combs=vt_sdec-valor_desc
+        
+    end
     
-    puts "O valor total é: #{vt_combs}"
+elsif tipo_combs=="G" ||tipo_combs=="g"
+    vt_sdec=litros_combs*3.30
+    if litros_combs<=20
+        valor_desc=vt_sdec*0.04
+        vt_combs=vt_sdec-valor_desc    
+    elsif litros_combs>20
+        valor_desc==vt_sdec*0.06
+        vt_combs==vt_sdec-valor_desc
+        
+    end
+    
+end
+puts "O valor total é: #{vt_combs}"
+    
+    
