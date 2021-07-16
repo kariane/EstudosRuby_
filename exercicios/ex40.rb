@@ -1,10 +1,5 @@
-=begin
-for i in (1..10)
+i=10
+while  i>0
     puts i
-end
-=end
-i=1
-while i<11
-    puts i
-    i+=1
+    i-=1
 end
