@@ -19,10 +19,9 @@ loop do
             result=n1*n2
         when 4
             result=n1/n2
-        else 
+        else
             puts "Opção inválida"
         end
         puts "O resultado da operação é: #{result}"
 
 end
-
